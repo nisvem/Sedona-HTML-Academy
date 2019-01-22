@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Быков](https://up.htmlacademy.ru/htmlcss/24/user/500135).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
