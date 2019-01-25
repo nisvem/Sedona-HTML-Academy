@@ -2,11 +2,57 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип Седона" width="150" height="70"></a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <!-- Вопрос: как сделать блок с фразами велком, седоной и с тем что гранд каньен "проигрывает" седоне? В виде одной кратинки или в виде 3 текстовых блоко и является ли SEDONA тогда заголовком 1 уровня?  -->
+      <section class="excerpt">
+        <b class="excerpt-lead">Седона — небольшой городок в Аризоне,заслуживающий большего!</b>
+        <p class="excerpt-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <section>
+      <!-- Блок на потом -->
+      </section>
+
+      <section class="lead-search">
+        <b>Заинтересовались ?</b>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </section>
+
+      <aside class="search-hotels">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <!--  ЗДЕСЬ БУДЕТ ФОРМА! -->
+      </aside>
+
+    </main>
+    <footer class="main-footer">
+      <p class="footer-hashtag"><a href="#">#vesitsedona</a></p> <!-- Не знаю нужна ли тут ссылка или нет, но выглядит так, будто нужна -->
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Website by</b>
+        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" alt="Логотип HTML Academy" width="130" height="50"></a>
+      </p>
+    </footer>
 
   </body>
 </html>
