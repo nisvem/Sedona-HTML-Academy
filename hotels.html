@@ -5,90 +5,109 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип Седона" width="150" height="70"></a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html" class="site-navigation-current">Гостиницы</a></li>
+    <header class="header">
+      <nav class="navigation">
+        <a class="header-logo"><img src="img/index-logo.svg" alt="Логотип Седона" width="150" height="70"></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
+          <li class="nav-item"><a class="nav-link nav-current" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="search-hotels">
+      <h1 class="visually-hidden">Поиск гостиниц</h1>
       <!--  ЗДЕСЬ БУДЕТ ФОРМА! -->
-      <h1 class="visually-hidden">Список гостиниц</h1>
-      <section class="catalog-hotels">
+      <section class="search-result">
+        <h2 class="visually-hidden">Результат поиска</h2>
         <ul class="hotels-list">
           <li class="hotels-list-item">
-            <h3>AMARA RESORT & SPA</h3>
-            <img src="img/hotels/amara_resort" alt="AMARA RESORT & SPA" width="130" height="90">
-            <p class="hotels-item-price">
-              <span class="hotels-item-price-left">Гостиница</span>
-              <span class="hotels-item-price-right">от 4000 Р.</span>
-            </p>
-            <p class="hotels-item-excerpt">
-              <span class="excerpt"><a href="#">Подробнее</a></span>
-              <span class="reservation"><a href="#">Забронировать</a></span>
-            </p>
-            <!-- Как-то надо сделать рейтинг.
-                Не понял как эти звездочки отображаются(
-                Может стоит вообще это все сделать таблицей?
-            -->
+            <img src="#" alt="AMARA RESORT & SPA" width="130" height="90">
+            <div class="hotels-item-desc">
+              <h3 class="hotels-item-title"><a href="#">AMARA RESORT & SPA</a></h3>
+              <p class="hotels-item-price">
+                <span class="hotels-item-price-left">Гостиница</span>
+                <span class="hotels-item-price-right">от 4000 Р.</span>
+              </p>
+              <div class="hotels-item-excerpt">
+                <a href="#" class="excerpt">Подробнее</a>
+                <a href="#" class="reservation">Забронировать</a>
+              </div>
+            </div>
+
+            <div class="hotels-item-raiting">
+              <ul class="raiting-stars-list">
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+              </ul>
+              <span class="raiting-desc"> Райтинг <output></output> </span>
+            </div>
           </li>
 
           <li class="hotels-list-item">
-            <h3>DESERT QUAIL INN</h3>
-            <img src="img/hotels/desert_quail" alt="DESERT QUAIL INN" width="130" height="90">
-            <p class="hotels-item-price">
-              <span class="hotels-item-price-left"> Мотель</span>
-              <span class="hotels-item-price-right">от 3000 Р.</span>
-            </p>
-            <p class="hotels-item-excerpt">
-              <span class="excerpt"><a href="#">Подробнее</a></span>
-              <span class="reservation"><a href="#">Забронировать</a></span>
-            </p>
-            <!-- Как-то надо сделать рейтинг.
-                Не понял как эти звездочки отображаются(
-                Может стоит вообще это все сделать таблицей?
-            -->
+            <img src="#" alt="DESERT QUAIL INN" width="130" height="90">
+            <div class="hotels-item-desc">
+              <h3 class="hotels-item-title"><a href="#">DESERT QUAIL INN</a></h3>
+              <p class="hotels-item-price">
+                <span class="hotels-item-price-left">Мотель</span>
+                <span class="hotels-item-price-right">от 3000 Р.</span>
+              </p>
+              <div class="hotels-item-excerpt">
+                <a href="#" class="excerpt">Подробнее</a>
+                <a href="#" class="reservation">Забронировать</a>
+              </div>
+            </div>
+            <div class="hotels-item-raiting">
+              <ul class="raiting-stars-list">
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+              </ul>
+              <span class="raiting-desc"> Райтинг <output></output> </span>
+            </div>
           </li>
 
           <li class="hotels-list-item">
-            <h3>VILLAS AT POCO DIABLO</h3>
-            <img src="img/hotels/villas_at_poco_diablo" alt="VILLAS AT POCO DIABLO" width="130" height="90">
-            <p class="hotels-item-price">
-              <span class="hotels-item-price-left">Апартаменты</span>
-              <span class="hotels-item-price-right">от 2000 Р.</span>
-            </p>
-            <p class="hotels-item-excerpt">
-              <span class="excerpt"><a href="#">Подробнее</a></span>
-              <span class="reservation"><a href="#">Забронировать</a></span>
-            </p>
-            <!-- Как-то надо сделать рейтинг.
-                Не понял как эти звездочки отображаются(
-                Может стоит вообще это все сделать таблицей?
-            -->
+            <img src="#" alt="VILLAS AT POCO DIABLO" width="130" height="90">
+            <div class="hotels-item-desc">
+              <h3 class="hotels-item-title"><a href="#">VILLAS AT POCO DIABLO</a></h3>
+              <p class="hotels-item-price">
+                <span class="hotels-item-price-left">Апартаменты</span>
+                <span class="hotels-item-price-right">от 2000 Р.</span>
+              </p>
+              <div class="hotels-item-excerpt">
+                <a href="#" class="excerpt">Подробнее</a>
+                <a href="#" class="reservation">Забронировать</a>
+              </div>
+            </div>
+
+            <div class="hotels-item-raiting">
+              <ul class="raiting-stars-list">
+                <li class="raiting-stars-item"></li>
+                <li class="raiting-stars-item"></li>
+              </ul>
+              <span class="raiting-desc"> Райтинг <output></output> </span>
+            </div>
           </li>
         </ul>
       </section>
 
     </main>
 
-    <footer class="main-footer">
-      <p class="footer-hashtag"><a href="#">#vesitsedona</a></p> <!-- Не знаю нужна ли тут ссылка или нет, но выглядит так, будто нужна -->
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
-        </ul>
-      </div>
+    <footer class="footer">
+      <a class="footer-hashtag" href="#">#vesitsedona</a>
+      <ul class="social-list">
+        <li class="social-item"><a class="social-button" href="#">Twitter</a></li>
+        <li class="social-item"><a class="social-button" href="#">Facebook</a></li>
+        <li class="social-item"><a class="social-button" href="#">YouTube</a></li>
+      </ul>
       <p class="footer-copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" alt="Логотип HTML Academy" width="130" height="50"></a>
+        <a class="copyright-link" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" alt="Логотип HTML Academy" width="130" height="50"></a>
       </p>
     </footer>
 
