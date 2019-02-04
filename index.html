@@ -8,7 +8,9 @@
     <div class="wrapeer">
       <header class="header">
         <nav class="navigation">
-          <a class="header-logo"><img src="img/logo.svg" alt="Логотип Седона" width="140" height="71"></a>
+          <a class="header-logo">
+            <img src="img/logo.svg" alt="Логотип Седона" width="140" height="71">
+          </a>
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
@@ -80,7 +82,33 @@
             <b class="search-hotels-title">Заинтересовались ?</b>
             <p class="search-hotels-desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button class="search-hotels-btn" type="button" name="button">Поиск гостиницы в Седоне</button>
-            <!--  ЗДЕСЬ БУДЕТ ФОРМА! -->
+
+            <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="arrival-date">
+                <label class="label-form" for="arrival-date">Дата заезда:</label>
+                <input class="input-date" id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              </p>
+              <p class="departure-date">
+                <label class="label-form" for="departure-date">Дата выезда:</label>
+                <input class="input-date" id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              </p>
+              <div class="number-peoples">
+                <div class="number-peoples-abults">
+                  <label class="label-form" for="number-abults">Взрослые:</label>
+                  <button class="button-reduce" type="button" name="reduce-abults">Уменьшить</button>
+                  <input class="input-number" id="number-abults" type="number-abults" placeholder="2">
+                  <button class="button-increase" type="button" name="increase-abults">Увеличить</button>
+                </div>
+                <div class="number-peoples-children">
+                  <label class="label-form" for="number-children">Дети:</label>
+                  <button class="button-reduce" type="button" name="reduce-children">Уменьшить</button>
+                  <input class="input-number" id="number-children" type="number-children" placeholder="0">
+                  <button class="button-increase" type="button" name="increase-children">Увеличить</button>
+                </div>
+              </div>
+              <button class="button-search" type="button" name="search">Найти</button>
+            </form>
+
           </div>
           <div class="map">
             <img src="img/map.jpg" alt="Карта" width="1200" height="593">

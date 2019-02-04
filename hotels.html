@@ -19,7 +19,83 @@
 
     <main class="search-hotels">
       <h1 class="visually-hidden">Поиск гостиниц</h1>
-      <!--  ЗДЕСЬ БУДЕТ ФОРМА! -->
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="infrastructure-form">
+          <legend>Инфраструктура:</legend>
+          <ul class="infrastructure-form-list">
+            <li class="infrastructure-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="infrastructure-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-parking">
+                Парковка
+              </label>
+            </li>
+            <li class="infrastructure-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-wifi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="type-form">
+          <legend>Тип жилья:</legend>
+          <ul class="type-form-list">
+            <li class="type-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="type-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-motel" checked>
+                Мотель
+              </label>
+            </li>
+            <li class="type-form-item">
+              <label class="checkbox-label">
+                <input type="checkbox" name="checkbox-apart" checked>
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="cost-form">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div>
+            <!--  ЗДЕСЬ БУДЕТ ПОЛЗУНОК! -->
+          </div>
+        </fieldset>
+        <button class="button-show" type="button" name="button-show">Показать</button>
+      </form>
+
+      <div class="sort-search">
+        <span class="sort-search-desc">Найдено: <output></output></span>
+        <h2 class="sort-search-title">Сортировка:</h2>
+        <ul class="sort-search-list">
+          <li class="sort-search-item">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort-search-item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort-search-item">
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <ul class="sort-search-increase-or-descending">
+          <li class="sort-increase"><a href="#">По возрастанию</a></li>
+          <li class="sort-descending"><a href="#">По убыванию</a></li>
+        </ul>
+      </div>
+
       <section class="search-result">
         <h2 class="visually-hidden">Результат поиска</h2>
         <ul class="hotels-list">
