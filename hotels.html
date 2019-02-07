@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -21,7 +23,7 @@
       <h1 class="visually-hidden">Поиск гостиниц</h1>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="infrastructure-form">
-          <legend>Инфраструктура:</legend>
+          <legend class="title-fieldset">Инфраструктура:</legend>
           <ul class="infrastructure-form-list">
             <li class="infrastructure-form-item">
               <label class="checkbox-label">
@@ -44,7 +46,7 @@
           </ul>
         </fieldset>
         <fieldset class="type-form">
-          <legend>Тип жилья:</legend>
+          <legend class="title-fieldset">Тип жилья:</legend>
           <ul class="type-form-list">
             <li class="type-form-item">
               <label class="checkbox-label">
@@ -68,7 +70,7 @@
         </fieldset>
 
         <fieldset class="cost-form">
-          <legend>Стоимость в сутки (Р):</legend>
+          <legend class="title-fieldset">Стоимость в сутки (Р):</legend>
           <div>
             <!--  ЗДЕСЬ БУДЕТ ПОЛЗУНОК! -->
           </div>
@@ -81,18 +83,18 @@
         <h2 class="sort-search-title">Сортировка:</h2>
         <ul class="sort-search-list">
           <li class="sort-search-item">
-            <a href="#">По цене</a>
+            <a class="sort-search-link current" href="#">По цене</a>
           </li>
           <li class="sort-search-item">
-            <a href="#">По типу</a>
+            <a class="sort-search-link" href="#">По типу</a>
           </li>
           <li class="sort-search-item">
-            <a href="#">По рейтингу</a>
+            <a class="sort-search-link" href="#">По рейтингу</a>
           </li>
         </ul>
         <ul class="sort-search-increase-or-descending">
-          <li class="sort-increase"><a href="#">По возрастанию</a></li>
-          <li class="sort-descending"><a href="#">По убыванию</a></li>
+          <li class="sort-increase"><a class="sort-search-link" href="#">По возрастанию</a></li>
+          <li class="sort-descending"><a class="sort-search-link current" href="#">По убыванию</a></li>
         </ul>
       </div>
 
@@ -120,7 +122,7 @@
                 <li class="raiting-stars-item"></li>
                 <li class="raiting-stars-item"></li>
               </ul>
-              <span class="raiting-desc"> Райтинг <output></output> </span>
+              <span class="raiting-desc"> Рейтинг <output></output> </span>
             </div>
           </li>
 
@@ -143,7 +145,7 @@
                 <li class="raiting-stars-item"></li>
                 <li class="raiting-stars-item"></li>
               </ul>
-              <span class="raiting-desc"> Райтинг <output></output> </span>
+              <span class="raiting-desc"> Рейтинг <output></output> </span>
             </div>
           </li>
 
@@ -166,7 +168,7 @@
                 <li class="raiting-stars-item"></li>
                 <li class="raiting-stars-item"></li>
               </ul>
-              <span class="raiting-desc"> Райтинг <output></output> </span>
+              <span class="raiting-desc"> Рейтинг <output></output> </span>
             </div>
           </li>
         </ul>
