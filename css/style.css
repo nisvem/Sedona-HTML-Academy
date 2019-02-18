@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff") format("woff"),
        url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: **400**;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff") format("woff"),
        url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: **700**;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -18,6 +18,8 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
 
 a {
   text-decoration: none;
@@ -52,6 +54,10 @@ a {
   margin: 0 auto;
 }
 
+.main-container {
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
 .page .container {
   background-color: #ffffff;
   z-index: 0;
@@ -64,6 +70,7 @@ a {
 .header-logo{
   position: absolute;
   top: 0;
+  z-index: 3;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -137,7 +144,8 @@ a {
 }
 
 .promo-title {
-  font-weight: 700px;
+  font-weight: 700;
+  font-style: normal;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -198,17 +206,41 @@ a {
 .features-list {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
+  width: 100%;
   padding: 162px 48px 81px 50px;
 }
 
 .feature-item {
   width: 300px;
   justify-content: center;
+  position: relative;
 }
 
 .feature-title {
   margin: 0 auto 24px;
+}
+
+.feature-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: -110px;
+  transform: translateX(-50%);
+}
+
+.feature-house::before {
+  background: url("../img/house.svg") 50% 100% no-repeat;
+}
+
+.feature-food::before {
+  background: url("../img/eat.svg") 50% 100% no-repeat;
+}
+
+.feature-souvenir::before {
+  background: url("../img/souvenir.svg") 50% 100% no-repeat;
 }
 
 .feature-desc {
@@ -280,6 +312,7 @@ a {
 .arrival-date,
 .departure-date {
   margin: 0 auto 30px;
+  position: relative;
 }
 
 .label-form,
@@ -303,6 +336,27 @@ a {
 .input-number{
   background-color: #f2f2f2;
   border: none;
+}
+
+.calendar {
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  border-width: 0;
+  background: none;
+}
+
+.calendar path {
+  fill: #cacaca;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+  fill: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
 }
 
 .number-peoples {
@@ -332,11 +386,6 @@ a {
   text-align: center;
   background-color: #f2f2f2;
   border: none;
-}
-
-.input-number,
-.button-reduce,
-.button-increase{
   width: 38px;
   height: 38px;
   padding: 0;
@@ -356,9 +405,27 @@ a {
 
 .button-reduce,
 .button-increase{
-  text-indent: 100%;
+  /* text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; */
+  font-size: 24px;
+  color: #cacaca;
+}
+
+.button-reduce {
+  font-size: 30px;
+}
+
+.button-reduce:hover,
+.button-increase:hover,
+.button-reduce:focus,
+.button-increase:focus{
+  color: #000000;
+}
+
+.button-reduce:active,
+.button-increase:active {
+  color: #81b3d2;
 }
 
 .button-search {
@@ -387,7 +454,6 @@ a {
   position: absolute;
   z-index: 1;
   bottom: -203px;
-
 }
 
 /*  Футер */
@@ -414,8 +480,33 @@ a {
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 0;
-   height: 48px; /*Пока не будет картинок */
+  padding: 0 10px 0 40px;
+  display: flex;
+  height: 100%;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background: #669ec0;
+}
+
+.social-button:active{
+  background: #5496bd;
+}
+
+.social-button:active path {
+  fill-opacity: 0.3;
 }
 
 .footer-copyright {
@@ -423,8 +514,27 @@ a {
   color: #000000;
   font-weight: 400;
   display: flex;
+  width: 200px;
+  justify-content: center;
   align-items: center;
   margin: 0;
+}
+
+.footer-copyright b{
+  margin-right: 8px;
+}
+
+.copyright-link {
+  display: flex;
+}
+
+.copyright-link:hover path,
+.copyright-link:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-link:active path {
+  fill: #bdbbbc;
 }
 
 /* Страница с гостиницами */
@@ -465,10 +575,34 @@ a {
 .infrastructure-form-item,
 .type-form-item {
   margin-bottom: 25px;
+  position: relative;
 }
 
 .checkbox-label {
   color: #ffffff;
+  margin-left: 40px;
+}
+
+.infrastructure-form-item input[type="checkbox"],
+.type-form-item input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 25px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+
+}
+
+input[type="checkbox"]:checked + .checkbox-label::before{
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .type-form {
@@ -493,10 +627,16 @@ a {
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #fffff;
+  border: 2px solid #ffffff;
   background: none;
   padding: 6px 34px;
   margin: 20px 10px 0 0;
+}
+
+.button-show:hover,
+.button-show:focus {
+  background: #ffffff;
+  color: #000000;
 }
 
 .sort-search {
@@ -528,7 +668,7 @@ a {
 }
 
 .sort-search-list,
-.sort-search-increase-or-descending,
+.sort-search-increase-descending,
 .hotels-list {
   list-style: none;
   margin: 0;
@@ -560,10 +700,31 @@ a {
   color: #81b3d2;
 }
 
-.sort-search-increase-or-descending {
+.sort-search-increase-descending {
  display: flex;
  flex-grow: 1;
  justify-content: flex-end;
+}
+
+.sort-search-link-increase {
+  margin-right: 22px;
+}
+
+.sort-search-link-increase.current polygon,
+.sort-search-link-descending.current polyline {
+  fill: #81b3d2;
+}
+
+.sort-search-link-increase:hover polygon,
+.sort-search-link-increase:focus polygon,
+.sort-search-link-descending:hover polyline,
+.sort-search-link-descending:focus polyline  {
+  fill: #231f20;
+}
+
+.sort-search-link-increase:active polygon,
+.sort-search-link-descending:active polyline  {
+  fill: #81b3d2;
 }
 
 .hotels-list {
@@ -666,6 +827,17 @@ a {
 
 .raiting-stars-list {
   display: flex;
+  padding-left: 20px;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.raiting-stars-item::before {
+  content: "";
+  display: flex;
+  width: 23px;
+  height: 21px;
+  background: url("../img/invalid-name.svg") no-repeat 100% 0%;
 }
 
 .raiting-desc {
