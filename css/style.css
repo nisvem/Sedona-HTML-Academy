@@ -19,8 +19,6 @@ html {
   box-sizing: border-box;
 }
 
-
-
 a {
   text-decoration: none;
 }
@@ -128,7 +126,7 @@ a {
 /* Главная страница */
 .intro {
   background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 57'%3E%3Cpath fill='%23fff' d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z'/%3E%3C/svg%3E") bottom center no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 57'%3E%3Cpath fill='%23fff' d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z'/%3E%3C/svg%3E") 100% 50% no-repeat,
     url("../img/background-photo.jpg") 50% 30% no-repeat;
   background-color: #F2F2F2;
   text-align: center;
@@ -212,12 +210,12 @@ a {
 
 .feature-item {
   width: 300px;
-  justify-content: center;
+  text-align: center;
   position: relative;
 }
 
 .feature-title {
-  margin: 0 auto 24px;
+  margin: 0 auto 24px auto;
 }
 
 .feature-item::before {
@@ -251,7 +249,7 @@ a {
   background-color: #eeeeee;
   flex-grow: 1;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 48px;
   width: 300px;
 }
@@ -313,6 +311,8 @@ a {
 .departure-date {
   margin: 0 auto 30px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .label-form,
@@ -326,7 +326,7 @@ a {
 }
 
 .input-date {
-  width: 346px;
+  flex-grow: 1;
   height: 38px;
   padding: 6px 0 6px 13px;
   margin-left: 15px;
@@ -514,7 +514,7 @@ a {
   color: #000000;
   font-weight: 400;
   display: flex;
-  width: 200px;
+  width: 210px;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -673,12 +673,13 @@ input[type="checkbox"]:focus + .checkbox-label {
   display: inline-block;
   width: 50%;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 15px;
   font-family: "PT Sans";
   color: #ffffff;
   cursor: pointer;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
+  padding: 7px 0;
 }
 
 .price-controls input {
