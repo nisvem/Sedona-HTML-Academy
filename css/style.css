@@ -675,12 +675,12 @@ input[type="checkbox"]:focus + .checkbox-label {
   font-family: "PT Sans";
   color: #ffffff;
   cursor: pointer;
-  padding-left: 55px;
+  text-align: center;
   vertical-align: middle;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 40px;
   margin: 0;
   color: inherit;
   font: inherit;
