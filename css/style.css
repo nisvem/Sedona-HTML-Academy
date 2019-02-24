@@ -342,6 +342,10 @@ a {
   margin-left: 15px;
 }
 
+.search-hotels-form input::-ms-clear {
+    display: none;
+}
+
 .input-date,
 .input-number{
   background-color: #f2f2f2;
@@ -771,8 +775,10 @@ input[type="checkbox"]:focus + .checkbox-label {
   text-transform: uppercase;
   border: 2px solid #ffffff;
   background: none;
-  padding: 6px 34px;
+  padding: 6px 0;
   margin: 0 auto;
+  width: 133px;
+  text-align: center;
 }
 
 .button-show:hover,
@@ -933,6 +939,7 @@ input[type="checkbox"]:focus + .checkbox-label {
 
 .excerpt {
   background-color: #81b3d2;
+  margin-right: 6px;
 }
 
 .excerpt:hover,
