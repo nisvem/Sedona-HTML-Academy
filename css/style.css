@@ -60,7 +60,7 @@ a {
   background-color: #ffffff;
   z-index: 0;
 }
-/* Навигация */
+
 .navigation {
   background-color: #ffffff;
 }
@@ -123,7 +123,6 @@ a {
   color: #766357;
 }
 
-/* Главная страница */
 .intro {
   background:
     url("../img/background-photo.jpg") 50% 30% no-repeat;
@@ -204,11 +203,20 @@ a {
   font-size: 21px;
 }
 
-.reason-number {
-}
-
 .reason-desc {
   margin: 21px auto 0 auto;
+}
+
+.reason-one {
+  padding: 0 5px;
+}
+
+.reason-item-bottom .reason-desc {
+  padding: 0 15px;
+}
+
+.reason-item-bottom .reason-five {
+  padding: 0 25px;
 }
 
 .features-list {
@@ -266,7 +274,6 @@ a {
 
 .search-hotels {
   text-align: center;
-  /* background-color: #ffffff; */
   position: relative;
 }
 
@@ -322,6 +329,7 @@ a {
   margin: 0 auto 30px;
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -336,10 +344,9 @@ a {
 }
 
 .input-date {
-  flex-grow: 1;
   height: 38px;
+  width: 346px;
   padding: 6px 0 6px 13px;
-  margin-left: 15px;
 }
 
 .search-hotels-form input::-ms-clear {
@@ -419,9 +426,6 @@ a {
 
 .button-reduce,
 .button-increase{
-  /* text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; */
   font-size: 24px;
   color: #cacaca;
 }
@@ -470,12 +474,10 @@ a {
   bottom: -203px;
 }
 
-/*  Футер */
 .footer {
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 36px 100px 36px 130px;
   position: relative;
@@ -488,17 +490,20 @@ a {
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-right: 254px;
 }
 
 .social-list {
-  text-align: center;
+  text-align: left;
   list-style: none;
-  margin: 0;
-  padding: 0 10px 0 40px;
+  margin: 0 220px 0 0;
   display: flex;
   height: 100%;
-  width: 200px;
-  justify-content: space-between;
+  padding: 0;
+}
+
+.social-item {
+  margin-right: 6px;
 }
 
 .social-button {
@@ -529,7 +534,7 @@ a {
   font-weight: 400;
   display: flex;
   width: 210px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
 }
@@ -551,7 +556,6 @@ a {
   fill: #bdbbbc;
 }
 
-/* Страница с гостиницами */
 .filter-form {
   background: url("../img/filter-background.jpg") right center no-repeat;
   background-color: #F2F2F2;
@@ -694,6 +698,7 @@ input[type="checkbox"]:focus + .checkbox-label {
   text-align: center;
   vertical-align: top;
   padding: 7px 0;
+  padding-left: 21px;
 }
 
 .price-controls input {
