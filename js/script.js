@@ -7,17 +7,9 @@ form.classList.remove("modal-show");
 
 button_search.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if(form.classList.contains("modal-hide") && !form.classList.contains("modal-show")) {
-    form.classList.remove("modal-hide");
-    form.classList.add("modal-show");
-    form.classList.remove("modal-error");
-    button_search.classList.remove("modal-error");
-  } else {
-    form.classList.remove("modal-show");
-    form.classList.add("modal-hide");
-    form.classList.remove("modal-error");
-    button_search.classList.remove("modal-error");
-  }
+  form.classList.toggle("modal-show");
+  form.classList.remove("modal-error");
+  button_search.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {

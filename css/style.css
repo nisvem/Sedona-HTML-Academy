@@ -37,15 +37,6 @@
   }
 }
 
-@keyframes slide_up {
-	from {
-    transform: translate(0px, 0px);
-	}
-	to  {
-    transform: translate(0px, -400px);
-  }
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -89,7 +80,8 @@ a {
 }
 
 .page .container {
-  z-index: 0;
+  position: relative;
+  z-index: 5;
   background-color: #ffffff;
 }
 
@@ -101,13 +93,14 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
-  z-index: 3;
+  z-index: 6;
   transform: translateX(-50%);
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -209,6 +202,10 @@ a {
   list-style: none;
 }
 
+.reason-item {
+  background-color: #81b3d2;
+}
+
 .reason-item,
 .feature-item {
   display: flex;
@@ -255,6 +252,7 @@ a {
   justify-content: space-between;
   width: 100%;
   padding: 162px 48px 81px 50px;
+  background-color: #ffffff;
 }
 
 .feature-item {
@@ -363,6 +361,7 @@ a {
   position: absolute;
   bottom: 77px;
   z-index: 3;
+  display: none;
   width: 568px;
   padding: 55px;
   margin: auto;
@@ -538,10 +537,10 @@ a {
 
 .footer {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   align-items: center;
-  padding: 36px 100px 36px 130px;
+  padding: 31px 100px 31px 130px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -557,6 +556,9 @@ a {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 180px;
   height: 100%;
   padding: 0;
   margin: 0 220px 0 0;
@@ -566,6 +568,7 @@ a {
 
 .social-item {
   margin-right: 6px;
+  padding: 5px 0;
 }
 
 .social-button {
@@ -886,6 +889,7 @@ input[type="checkbox"]:focus + .checkbox-label {
 .sort-search-increase-descending,
 .hotels-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1067,12 +1071,6 @@ input[type="checkbox"]:focus + .checkbox-label {
 .modal-show {
   display: block;
   animation-name: slide_down;
-  animation-duration: 0.6s;
-}
-
-.modal-hide {
-  display: none;
-  animation-name: slide_up;
   animation-duration: 0.6s;
 }
 
