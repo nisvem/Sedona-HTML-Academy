@@ -312,17 +312,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
   width: 100%;
-  padding: 162px 48px 81px 50px;
+  padding: 0;
   background-color: #ffffff;
 }
 
 .feature-item {
   position: relative;
-  width: 300px;
+  width: 400px;
+  padding: 162px 58px 81px;
   text-align: center;
 }
 
@@ -334,7 +334,7 @@ a {
   content: "";
   position: absolute;
   left: 50%;
-  top: -110px;
+  top: 20px;
   display: block;
   width: 80px;
   height: 80px;
@@ -773,7 +773,7 @@ a {
 }
 
 .checkbox-label {
-  margin-left: 40px;
+  padding-left: 40px;
   color: #ffffff;
 }
 
