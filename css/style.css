@@ -139,9 +139,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
@@ -446,9 +443,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -469,6 +463,7 @@ a {
   width: 346px;
   height: 38px;
   padding: 6px 0 6px 13px;
+  margin-left: auto;
 }
 
 .search-hotels-form input::-ms-clear {
@@ -1108,8 +1103,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   padding: 30px 73px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list-item img {
+  margin-right: 29px;
 }
 
 .hotels-item-desc {
@@ -1127,9 +1127,10 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 780px;
-  margin-left: 29px;
   margin-top: -3px;
 }
+
+
 
 .hotels-item-title {
   margin: 0;
